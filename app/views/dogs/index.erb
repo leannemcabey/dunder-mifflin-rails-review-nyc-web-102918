@@ -1,0 +1,7 @@
+<h1>Dogs</h1>
+
+<ul>
+  <% @sorted_dogs.reverse.each do |dog| %>
+  <li><%= link_to dog.name, dog_path(dog) %> <%= dog.employee_count %> </li>
+  <% end %>
+</ul>
